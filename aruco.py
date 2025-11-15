@@ -3,7 +3,6 @@ import cv2
 import cv2.aruco as aruco
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Simple ArUco detector (webcam, video, or phone stream)")
     p.add_argument("--camera", type=int, default=0, help="Camera device index (default: 0)")
     p.add_argument("--video", type=str, help="Path to input video file (optional)")
     p.add_argument("--phone-url", type=str, default="http://192.168.1.100:8080/video", 
